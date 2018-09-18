@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-  <script src="https://maps.googleapis.com/maps/api/jsvv=3.exp&sensor=false&libraries=places"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -105,7 +104,7 @@
 
                   <!--firstName-->
                   <div class="md-form ">
-                    <input type="text" id="firstName" class="form-control">
+                    <input type="text" id="firstName" class="form-control" required>
                     <label for="firstName" class="">First name</label>
                   </div>
 
@@ -117,7 +116,7 @@
 
                   <!--lastName-->
                   <div class="md-form">
-                    <input type="text" id="lastName" class="form-control">
+                    <input type="text" id="lastName" class="form-control" required>
                     <label for="lastName" class="">Last name</label>
                   </div>
 
@@ -132,28 +131,19 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="basic-addon1">@</span>
                 </div>
-                <input type="text" class="form-control py-0" placeholder="Username" aria-describedby="basic-addon1">
+                <input type="text" class="form-control py-0" placeholder="Username" aria-describedby="basic-addon1" required>
               </div>
 
               <!--email-->
               <div class="md-form mb-5">
-                <input type="text" id="email" class="form-control" placeholder="youremail@example.com">
+                <input type="text" id="email" class="form-control" placeholder="youremail@example.com" required>
                 <label for="email" class="">Email</label>
               </div>
 
               <!--address-->
               <div class="md-form mb-5">
-                <input type="text" id="address" class="form-control" placeholder="1234 Main St">
+                <input type="text" id="address" class="form-control" placeholder="1234 Main St" required>
                 <label for="locationTextField">Location</label>
-                <input id="locationTextField" type="text" size="50">
-                <script>
-            function init() {
-                var input = document.getElementById('locationTextField');
-                var autocomplete = new google.maps.places.Autocomplete(input);
-            }
-
-            google.maps.event.addDomListener(window, 'load', init);
-        </script>
               </div>
 
               <!--address-2-->
@@ -172,7 +162,7 @@
                   <select class="custom-select d-block w-100" id="country" required>
                     <option value="">Choose...</option>
 <option value="AF">Afghanistan</option>
-	<option value="AX">Åland Islands</option>
+	<option value="AX">Aland Islands</option>
 	<option value="AL">Albania</option>
 	<option value="DZ">Algeria</option>
 	<option value="AS">American Samoa</option>
